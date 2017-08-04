@@ -7,11 +7,12 @@ A responsive clientside React-Redux based [super epic turbo awesome mega app](ht
 ### MVP Features
 1. CRUD 
 2. Responsive
-3. Server-side rendering
+3. 
 
 ### Stretch Goals
 - Loading spinner from aug 2 drills
 - Accessibility
+- Server-side rendering
 
 
 ### User Stories
