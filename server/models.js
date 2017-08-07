@@ -7,7 +7,7 @@ const postSchema = mongoose.Schema({
     created: {type: Date, default: Date.now}
 })
 
-postSchema.methods(apiRepr) = function() {
+postSchema.methods.apiRepr = function() {
     return {
         id: this.id,
         data: this.data,

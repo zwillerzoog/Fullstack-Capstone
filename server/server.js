@@ -4,14 +4,17 @@ const bodyParser = require('body-parser');
 const express = require('express');
 const mongoose = require('mongoose');
 
+const {Post} = require('./models');
 const {DATABASE_URL, PORT} = require('./config');
 const app = express();
 
 app.use(bodyParser.json());
 mongoose.Promise = global.Promise;
 
-app.get('/api/posts', (req, res) => {
+app.get('/', (req, res) => {
     console.log('hi!');
+    res.json({message: 'Hello'});
+
 })
 
 let server;
