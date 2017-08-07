@@ -15,25 +15,25 @@
 	- [X] Have a high level description of app purpose
 	- [X] Get it approved
 	- [X] Research pop up dialog or switch views options 
-	- [ ] Create task list including subtask 
-	- [ ] Prioritize task list
-	- [ ] Create static main page
-	- [ ] get (postman)
-	- [ ] post (postman)
-	- [ ] delete (postman)
-	- [ ] put (postman)
-	- [ ] Stateful
-	- [ ] Add Comment button
-	- [ ] Add Comment dialog
-	- [ ] Add Delete button 
-	- [ ] Posts printing out to DOM
-	- [ ] Write initial/smoke tests
-	- [ ] Hookup mlab
-	- [ ] working skeleton 
-	- [ ] Update documentation
+	- [X] Create task list including subtask 
+	- [X] Prioritize task list
+	- [X] Create static main page
+	- [X] get (postman)
+	- [X] post (postman)
+	- [X] Add Comment button
+	- [X] Add Delete button 
+	- [X] Hookup mlab
+	- [X] working skeleton 
+	- [X] Update documentation
 
 * :confused: Tuesday (Muscle & Unit Tests)
 	*  Version 1.2 contains
+	- [ ] delete (postman)
+	- [ ] put (postman)
+	- [ ] Stateful
+	- [ ] Posts printing out to DOM
+	- [ ] Write initial/smoke tests
+	- [ ] Add Comment dialog
 	- [ ] Setup Travis CI
 	- [ ] Setup Heroku	
 	- [ ] Seeding to db
