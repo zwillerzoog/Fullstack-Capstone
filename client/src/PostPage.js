@@ -10,7 +10,8 @@ class PostPage extends React.Component {
         super();
         this.state = { 
             data: ['Kris asked a great question today!', 'Paul sneezed on me', 'bacon'],
-            view: 0 
+            view: 0,
+            // count: 0 
         };
     }
 
@@ -23,13 +24,6 @@ class PostPage extends React.Component {
                 </form>
                 <div style={style.PostPage}>
                     <h2>Posts:</h2>
-                        <span className="post">
-                            <p>William is always positive</p>
-                            <p>Vote Count: 8</p>
-                            <button className="vote">{emoji.get('thumbsup')}</button>
-                            <button className="reply">Reply</button>
-                            <button className="delete">Delete</button>
-                        </span>
                     <PostList state={this.state} />
                     {/*<Replies />
                     <Votes />
