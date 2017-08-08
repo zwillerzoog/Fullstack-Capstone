@@ -3,6 +3,7 @@ const proxy = require('http-proxy-middleware');
 
 const app = express();
 
+
 if (process.env.NODE_ENV === 'production') {
     // Change the cwd to server to mimic running directly
     process.chdir('server');
@@ -21,7 +22,7 @@ else {
         ws: true, // Proxy websockets too
         router: {
             // Anything to /api goes to our backend
-            'http://localhost:8080/': 'http://localhost:3001'
+            'localhost:8080': 'http://localhost:3001'
         }
     }));
     app.listen(process.env.PORT || 8080);
