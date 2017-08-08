@@ -3,17 +3,17 @@
 const mongoose = require('mongoose');
 
 const postSchema = mongoose.Schema({
-    data: {type: String},
-   created: {type: Date, default: Date.now}
-})
+  text: {type: String},
+  created: {type: Date, default: Date.now}
+});
 
 postSchema.methods.apiRepr = function() {
-    return {
-        id: this.id,
-        data: this.data,
-        created: this.created
-    }
-}
+  return {
+    id: this.id,
+    text: this.text,
+    created: this.created
+  };
+};
 
 const Post = mongoose.model('Post', postSchema);
 
