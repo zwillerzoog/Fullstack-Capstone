@@ -6,14 +6,10 @@ import reducer from './reducers';
 import {connect} from 'react-redux';
 const emoji = require('node-emoji');
 
-export function PostList(props) {
+export class PostList extends React.Component {
 
-console.log("We're trying to get the state from reducers so we can work with postList!");
-
-
-
-
-  let post = props.text.map(_post => {
+ posts() { 
+  let post = this.props.text.map(_post => {
     return (
       <div>
         <p>
@@ -28,11 +24,15 @@ console.log("We're trying to get the state from reducers so we can work with pos
       </div>
     );
   });
+ }
+
+ render() {
   return (
     <div style={style.PostList}>
       {/* {post} */}
     </div>
   );
+}
 }
 
 const mapStateToProps = state => ({

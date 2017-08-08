@@ -10,8 +10,8 @@ const emoji = require('node-emoji');
 
 
 class PostPage extends React.Component {
-  addPost(text) {
-    this.props.dispatch(actions.addPost(text));
+  componentDidMount() {
+    this.props.dispatch(actions.getPosts());
   }
 
   render() {
