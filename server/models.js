@@ -9,7 +9,7 @@ const postSchema = mongoose.Schema({
 
 postSchema.methods.apiRepr = function() {
   return {
-    id: this.id,
+    id: this._id,
     text: this.text,
     created: this.created
   };

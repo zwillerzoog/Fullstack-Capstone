@@ -28,29 +28,30 @@
 
 * :confused: Tuesday (Muscle & Unit Tests)
 	*  Version 1.2 contains
-	- [ ] delete (postman)
-	- [ ] put (postman)
+	- [X] delete (postman)
+	- [X] put (postman)
 	- [ ] Stateful
-	- [ ] Posts printing out to DOM
-	- [ ] Write initial/smoke tests
+	- [ ] **Posts printing out to DOM**
 	- [ ] Add Comment dialog
-	- [ ] Setup Travis CI
-	- [ ] Setup Heroku	
 	- [ ] Seeding to db
-	- [ ] Vote Counter
-	- [ ] Responsive forum w/ assets
-	- [ ] Sorting by popular vote
-	- [ ] CRUD operational from DOM
-	- [ ] Unit Tests for CRUD
-	- [ ] secret key for login (room password)
+	- [ ] **CRUD operational from DOM**
+	- [ ] Prep for Demo tomorrow
 	- [ ] Update documentation	
 
 * :sweat: Wednesday (CSS & Quick demo)
 	* Version 1.3 contains 
+	- [ ] Setup Travis CI
+	- [ ] Write initial/smoke tests
+	- [ ] Setup Heroku
+	- [ ] Vote Counter
+	- [ ] Unit Tests for CRUD
+	- [ ] Responsive forum w/ assets
+	- [ ] Sorting by popular vote
 	- [ ] Collect feedback / iterate
 	- [ ] Loading spinner from aug 2 drills
 	- [ ] auth create profile
 	- [ ] auth login flow
+	- [ ] secret key for login (room password)
 	- [ ] Update documentation
 
 * :weary: Thursday (Demo Prep & App Complete)
