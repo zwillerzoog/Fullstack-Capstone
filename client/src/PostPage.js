@@ -5,6 +5,7 @@ import PostList from './PostList';
 import PostForm from './PostForm';
 import * as actions from './actions';
 import reducer from './reducers';
+import {connect} from 'react-redux';
 const emoji = require('node-emoji');
 
 
@@ -18,11 +19,14 @@ class PostPage extends React.Component {
       <div className="post-page">
         <PostForm />
         <div style={style.PostPage}>
-          <PostList state={this.state} />
+          <PostList />
         </div>
       </div>
     );
   }
 }
 
-export default PostPage;
+const mapStateToProps = state => ({
+  text: state.text
+})
+export default connect(mapStateToProps)(PostPage);
