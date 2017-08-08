@@ -3,6 +3,10 @@
 const style = {
     body: {
         backgroundColor: '#A3CDFD',
+    },
+    vote: {
+        backgroundColor: '#F5F5F5',
+        fontSize: '90px',
     }
 }
 // const style = {
