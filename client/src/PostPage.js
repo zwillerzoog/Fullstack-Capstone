@@ -16,9 +16,9 @@ class PostPage extends React.Component {
 
   render() {
     return (
-      <div className="post-page">
+      <div className="post-page" > 
         <PostForm />
-        <div style={style.PostPage}>
+          <div style={style.PostPage}>
           <PostList />
         </div>
       </div>

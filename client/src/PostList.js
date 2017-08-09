@@ -4,17 +4,19 @@ import Comment from './Comment';
 import ReplyBox from './ReplyBox';
 import reducer from './reducers';
 import {connect} from 'react-redux';
+import PostForm from './PostForm';
+import * as actions from './actions';
 const emoji = require('node-emoji');
 
 export class PostList extends React.Component {
-
- posts() { 
-  let post = this.props.text.map(_post => {
+  componentDidMount() {
+    this.props.dispatch(actions.getPosts());
+  }
+ render() {
+   let post = this.props.text.map((t, index) => {
     return (
-      <div>
-        <p>
-          {_post}
-        </p>
+      <div key={index}>
+        <p>{t.value}</p>
         <button className="vote">
           {emoji.get('thumbsup')}
         </button>
@@ -22,17 +24,14 @@ export class PostList extends React.Component {
         <button className="delete">Delete</button>
         <ReplyBox />
       </div>
-    );
+    )
   });
- }
-
- render() {
   return (
     <div style={style.PostList}>
-      {/* {post} */}
+       {post} 
     </div>
   );
-}
+ }
 }
 
 const mapStateToProps = state => ({

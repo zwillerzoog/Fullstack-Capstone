@@ -30,16 +30,16 @@
 	*  Version 1.2 contains
 	- [X] delete (postman)
 	- [X] put (postman)
-	- [ ] Stateful
-	- [ ] **Posts printing out to DOM**
-	- [ ] Add Comment dialog
-	- [ ] Seeding to db
-	- [ ] **CRUD operational from DOM**
-	- [ ] Prep for Demo tomorrow
-	- [ ] Update documentation	
+	- [X] Stateful
+	- [X] Posts printing out to DOM
+	- [X] Prep for Demo tomorrow
+	- [X] Update documentation	
 
 * :sweat: Wednesday (CSS & Quick demo)
 	* Version 1.3 contains 
+	- [ ] Add Comment dialog
+	- [ ] Reset form after submit
+	- [ ] **CRUD operational from DOM**
 	- [ ] Setup Travis CI
 	- [ ] Write initial/smoke tests
 	- [ ] Setup Heroku
@@ -48,7 +48,6 @@
 	- [ ] Responsive forum w/ assets
 	- [ ] Sorting by popular vote
 	- [ ] Collect feedback / iterate
-	- [ ] Loading spinner from aug 2 drills
 	- [ ] auth create profile
 	- [ ] auth login flow
 	- [ ] secret key for login (room password)
@@ -56,6 +55,7 @@
 
 * :weary: Thursday (Demo Prep & App Complete)
 	* [ ] Version 1.3 contains
+	- [ ] Loading spinner from aug 2 drills
 	- [ ] Info page with parallax
 	- [ ] Accessibility
 	- [ ] Update documentation

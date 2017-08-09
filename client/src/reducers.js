@@ -27,7 +27,7 @@ export const reducer = (state=initialState, action) => {
         })
     } else if (action.type === actions.ADD_POST) {
         return Object.assign({}, state, {
-            text: [[...state.text], action.text]
+            text: [...state.text, action.text]
         }) 
     }
     return state;

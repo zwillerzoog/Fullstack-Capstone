@@ -1,59 +1,32 @@
 import React from 'react';
 import style from './style';
+import * as actions from './actions';
+import {connect} from 'react-redux';
 
-export default function PostForm(props) {
+export class PostForm extends React.Component{
 
-function onSubmit() {
-    console.log(props);
-}
+    onSubmit(event){
+        event.preventDefault();
+        const value = this.input.value;
+        console.log('-----> ', value);
+        this.props.dispatch(actions.addPost({value}));
+    }
 
-// function addPost() {
-//   $('.post-form').submit(e => {
-//       e.preventDefault();
-//       const url = '/post';
-//       const postInput = $('.post-input').val();
-//       $.ajax({
-//           url,
-//           method: 'POST',
-//           text: postInput
-//       }).done(post => {
-//           state.text = post;
-//       })
-//   })
-// }
-
-onSubmit();
-
-    return (
-            <div className="post-page">
-                <form className="post-form">
-                    <input type="text" className="post-input" placeholder="Kris asked a really great question today!" />
-                    <button type="submit">Add Comment</button>
+    render(){
+        return(
+            <div className='addOption'>
+                Have anonymous feedback to share?
+                <form onSubmit={e => this.onSubmit(e)}>
+                    <input type="text" placeholder="enter text here" 
+                        ref={input => this.input = input} required/>
+                    <button type="submit">Tell us!</button>
                 </form>
-            </div>)
+            </div>
+        );
+    }
 }
+const mapStateToProps = (state, props) => ({
+    text: state.addPost
+});
 
-
-// class CommentList extends Component {
-//   render() {
-//     let commentNodes = this.props.data.map(comment => {
-//       return (
-//         <Comment
-//           author={ comment.author }
-//           uniqueID={ comment['_id'] }
-//           onCommentDelete={ this.props.onCommentDelete }
-//           onCommentUpdate={ this.props.onCommentUpdate }
-//           key={ comment['_id'] }>
-//           { comment.text }
-//         </Comment>
-//       )
-//     })
-//     return (
-//       <div style={ style.commentList }>
-//         { commentNodes }
-//       </div>
-//     )
-//   }
-// }
-// export default CommentList;
-
+export default connect(mapStateToProps)(PostForm);
